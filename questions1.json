@@ -1,0 +1,52 @@
+[
+    {
+        "question": "Đội Một trồng được 50 cây, đội Hai trồng được ít hơn đội Một 15 cây, đội 3 trồng được nhiều hơn đội hai 5 cây. Hỏi cả ba đội trồng được bao nhiêu cây?",
+        "choices": ["115", "125", "135", "145"],
+        "answer": "125"
+    },
+    {
+        "question": "Có 40 học sinh trong 1 lớp. Mỗi bàn có 4 bạn ngồi. Hỏi có bao nhiêu bàn học trong lớp?",
+        "choices": ["9", "10", "11", "12"],
+        "answer": "10"
+    },
+     {
+        "question": "Một con ốc sên bò lên 1 cái cây cao 10 mét. Mỗi ngày leo được 3 mét và đến tối ngủ quên bị tụt 2 mét. Hỏi đến ngày thứ ngấy thì ốc sên bò đến đỉnh cây?",
+        "choices": ["Ngày thứ 6", "Ngày thứ 7", "Ngày thứ 8", "Ngày thứ 10"],
+        "answer": "Ngày thứ 8"
+    },
+     {
+        "question": " Biết ô tô có 4 bánh, xe máy có 2 bánh, xe ba gác có 3 bánh, xe tải có 6 bánh. Một bãi xe có tất cả  15 chiếc xe các loại. Trong đó ô tô có 4 chiếc, xe  máy cho 6 chiếc, xe ba gác có 3 chiếc. Hỏi bãi xe có tất cả bao nhiêu bánh xe và có bao nhiêu xe tải?",
+        "choices": ["2 xe tải và có 37 bánh xe", "2 xe tải và 49 bánh", "7 xe tải và 49 bánh xe", "7 xe tải và 37 bánh xe"],
+        "answer": "2 xe tải và 49 bánh"
+    },
+     {
+        "question": "Người ta đem đựng 30 lít dầu vào các can nhỏ. Đựng vào mỗi can 5 lít. Tính số số can dầu ?",
+        "choices": ["25 can", "5 can", "6 can", "35 can"],
+        "answer": "6 can"
+    },
+     {
+        "question": "Da cóc bọc bột lọc, bột lọc bọc hòn than, là quả gì?",
+        "choices": ["CHôm chôm", "Nhãn", "Thanh long", "Cam"],
+        "answer": "Nhãn"
+    },
+     {
+        "question": "Con gì hai mắt trong veo. Thích nằm sưởi nắng, thích trèo cây cau?",
+        "choices": ["Con thỏ", "Con mèo", "Con chó", "Con chuột"],
+        "answer": "Con mèo"
+    },
+     {
+        "question": "Có chân mà chẳng biết đi. Có mặt phẳng lì cho bé ngồi lên. Là cái gì?",
+        "choices": ["Cái bàn", "Cái ghế", "Cái tủ", "cái nhà"],
+        "answer": "Cái ghế"
+    },
+     {
+        "question": "Ba lan năm nay 30 tuổi, Lan nhỏ hơn ba lan 20 tuổi, hỏi 10 năm sau lan bao nhiêu tuổi?",
+        "choices": ["30", "13", "20", "23"],
+        "answer": "20"
+    },
+     {
+        "question": "Một đội đồng diễn thể dục xếp 3 hàng, mỗi hàng 10 bạn thì thừa ra 3 bạn. Hỏi đội đồng diễn thể dục có bao nhiêu bạn?",
+        "choices": ["36", "33", "30", "27"],
+        "answer": "33"
+    }
+]
