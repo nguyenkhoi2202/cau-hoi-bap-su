@@ -2,7 +2,7 @@ let currentQuestionIndex = 0;
 let score = 0;
 let questions = [];
 let timerInterval;
-let timeLeft = 1800;
+let timeLeft = 900;
 
 let quizStarted = false; // Biến để kiểm tra xem bài thi đã bắt đầu hay chưa
 let timerStarted = false;
@@ -124,9 +124,28 @@ function updateProgress() {
 }
 
 function submitQuiz() {
+   
+    let timeQuiz= 900 - timeLeft;
+    console.log(timeQuiz)
+    console.log(timeLeft)
+    let diemTG = 50
+    if(timeQuiz >  600 && timeQuiz <= 650){
+        diemTG= 40
+    }else if(timeQuiz >  650 && timeQuiz <= 700){
+        diemTG= 30
+    }else if(timeQuiz >  700 && timeQuiz <= 750){
+        diemTG= 20
+    }else if(timeQuiz >  750 && timeQuiz <= 800){
+        diemTG= 10
+    }else if(timeQuiz > 800){
+        diemTG = 5
+    }
+    console.log(diemTG)
+    let diem = score * 5 + diemTG;
     clearInterval(timerInterval);
     const questionContainer = document.getElementById('question-container');
-    questionContainer.innerHTML = `<h2>Quiz Completed</h2><p>Your score: ${score}/${questions.length}</p>`;
+    // điểm = 50% thời gian + 50% câu trả lời   -  900
+    questionContainer.innerHTML = `<h2>Hoàn thành bài thi</h2><p>Số câu đúng: ${score}/${questions.length}</p><p>Số điểm: ${diem}/100 </p>`;
     document.getElementById('prev-button').classList.add('hidden');
     document.getElementById('next-button').classList.add('hidden');
     document.getElementById('submit-button').classList.add('hidden');
