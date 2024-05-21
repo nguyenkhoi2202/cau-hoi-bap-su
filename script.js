@@ -46,7 +46,7 @@ function shuffleArray(array) {
         const j = Math.floor(Math.random() * (i + 1));
         [array[i], array[j]] = [array[j], array[i]];
     }
-    return array;
+    return array.slice(0, 10);;
 }
 
 document.addEventListener('DOMContentLoaded', (event) => {
@@ -67,12 +67,29 @@ function displayQuestion() {
         return; // Nếu bài thi chưa bắt đầu, không hiển thị câu hỏi
     }
     const questionContainer = document.getElementById('question-container');
+    const imgContainer = document.getElementById('img-container');
     questionContainer.innerHTML = '';
-
+   
+    imgContainer.innerHTML = '';
     const questionObj = questions[currentQuestionIndex];
+    const questionImg = questionObj.img;
+    console.log(questionImg)
+    if(questionImg == ""){
+        imgContainer.style.display = 'none';
+    }else{
+        imgContainer.style.display = 'inline';
+    }
+    const img = document.createElement('img');
+    img.src = questionObj.img;
+    img.alt = 'Beautiful Landscape';
+    img.width = 500;
+    img.height = 350;
+    //<img src="image.jpg" alt="Example Image" width="300" height="200">
+
     const questionElement = document.createElement('div');
     questionElement.textContent = questionObj.question;
     questionContainer.appendChild(questionElement);
+    imgContainer.appendChild(img);
 
     questionObj.choices.forEach(choice => {
         const choiceElement = document.createElement('button');
@@ -80,6 +97,7 @@ function displayQuestion() {
         choiceElement.classList.add('choice');
         choiceElement.addEventListener('click', () => selectAnswer(choiceElement, choice));
         questionContainer.appendChild(choiceElement);
+    
     });
 
     updateProgress();
