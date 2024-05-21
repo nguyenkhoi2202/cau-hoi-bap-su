@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz App</title>
+    <title>Su Bắp</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="quiz-container">
         <h1>Câu hỏi cho Bắp và Su</h1>
+        <input type="password" id="name" name="name" placeholder="Nhập mật khẩu bài thi">
         <button id="start-button" onclick="startQuiz()">Bắt đầu</button> <!-- Thêm nút "Bắt đầu" -->
-        <div id="timer">Time left: <span id="time">900</span> seconds</div>
+        <div id="timer">Time left: <span id="time">700</span> seconds</div>
         <div id="question-container"></div>
         <div id="navigation">
             <button id="prev-button" onclick="prevQuestion()" class="hidden">Lùi</button>
@@ -19,6 +20,7 @@
         <div id="progress">Câu hỏi <span id="current-question">1</span> của <span id="total-questions">10</span></div>
         <button id="submit-button" onclick="submitQuiz()" class="hidden">Nộp Bài</button>
     </div>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

@@ -2,21 +2,41 @@ let currentQuestionIndex = 0;
 let score = 0;
 let questions = [];
 let timerInterval;
-let timeLeft = 900;
+let timeLeft = 700;
 
 let quizStarted = false; // Biến để kiểm tra xem bài thi đã bắt đầu hay chưa
 let timerStarted = false;
+let pass = document.getElementById('name');
 
+
+setInterval(removeLocal, 30 * 60 * 1000);
+
+function removeLocal() {
+    localStorage.clear();
+}
 
 function startQuiz() {
     if (!quizStarted) {
-        quizStarted = true;
-        document.getElementById('start-button').classList.add('hidden'); // Ẩn nút "Bắt đầu"
 
-        startTimer(); // Bắt đầu thời gian chạy nếu chưa bắt đầu
-        timerStarted = true;
+        if (pass.value === 'minhquan' || pass.value === 'thuky' || pass.value === 'minhquan11' || pass.value === 'minhquan99' || pass.value === 'thuky22' || pass.value === 'thuky88') {
+            const value = localStorage.getItem(pass.value);
+            if (value != null) {
+                alert('Bạn đã hoàn thành bài thi này rồi !!!')
+                return
+            }
 
-        displayQuestion(); // Hiển thị câu hỏi đầu tiên
+            pass.classList.add('hidden')
+            quizStarted = true;
+            document.getElementById('start-button').classList.add('hidden'); // Ẩn nút "Bắt đầu"
+
+            startTimer(); // Bắt đầu thời gian chạy nếu chưa bắt đầu
+            timerStarted = true;
+
+            displayQuestion(); // Hiển thị câu hỏi đầu tiên
+        } else {
+            alert('Mật khẩu nhập sai rồi !!!')
+        }
+
     }
 }
 
@@ -124,20 +144,20 @@ function updateProgress() {
 }
 
 function submitQuiz() {
-   
-    let timeQuiz= 900 - timeLeft;
+    localStorage.setItem(pass.value, pass.value);
+    let timeQuiz = 700 - timeLeft;
     console.log(timeQuiz)
     console.log(timeLeft)
     let diemTG = 50
-    if(timeQuiz >  600 && timeQuiz <= 650){
-        diemTG= 40
-    }else if(timeQuiz >  650 && timeQuiz <= 700){
-        diemTG= 30
-    }else if(timeQuiz >  700 && timeQuiz <= 750){
-        diemTG= 20
-    }else if(timeQuiz >  750 && timeQuiz <= 800){
-        diemTG= 10
-    }else if(timeQuiz > 800){
+    if (timeQuiz > 400 && timeQuiz <= 450) {
+        diemTG = 40
+    } else if (timeQuiz > 450 && timeQuiz <= 500) {
+        diemTG = 30
+    } else if (timeQuiz > 500 && timeQuiz <= 550) {
+        diemTG = 20
+    } else if (timeQuiz > 550 && timeQuiz <= 600) {
+        diemTG = 10
+    } else if (timeQuiz > 600) {
         diemTG = 5
     }
     console.log(diemTG)
@@ -149,4 +169,39 @@ function submitQuiz() {
     document.getElementById('prev-button').classList.add('hidden');
     document.getElementById('next-button').classList.add('hidden');
     document.getElementById('submit-button').classList.add('hidden');
+
+    const now = new Date();
+    var ten = 'Su';
+    if (pass.value === 'minhquan' || pass.value === 'minhquan11' || pass.value === 'minhquan99') {
+        ten = 'Bắp'
+    }
+
+
+    (function () {
+        emailjs.init("GPE50WaijWrm35Nfj");
+    })();
+
+    var templateParams = {
+        sendername: 'Khoi Tran',
+        to: 'khoitn1129@gmail.com',
+        subject: `Kết Quả bài thi của ${ten}`,
+        replyto: 'noreply@gmail.com',
+        message: `KẾT QUẢ BÀI THI CỦA ${ten} NHƯ SAU: 
+        
+        `,
+        tg: `Thời gian làm bài lúc: ${now}`,
+        diem:  `Điểm của ${ten} là:  ${diem}` ,
+        score: `Số câu trả lời đúng là: ${score} `
+        
+    };
+    var service_id = 'service_pwl8wtg'
+    var template_id = 'template_742s3dt'
+
+    emailjs.send(service_id, template_id, templateParams)
+        .then(function (response) {
+            alert('Email đã được gửi thành công!', response.status, response.text);
+        }, function (error) {
+            alert('Gửi email thất bại...', error);
+        });
+
 }
