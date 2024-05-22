@@ -78,10 +78,148 @@
         "answer": "16 tam giác và 5 hình vuông"
     },
     {
-        "question": "Hình bên có bao nhiêu hình vuông?",
+        "question": "Hình bên dưới có bao nhiêu hình vuông?",
         "choices": ["7 vuông", "8 vuông", "6 vuông", "5 vuông"],
         "img" : "img/hinhvuong.png",
         "answer": "7 vuông"
+    },
+    {
+        "question": "Hình bên dưới có bao nhiêu hình vuông?",
+        "choices": ["7 vuông", "8 vuông", "9 vuông", "10 vuông"],
+        "img" : "img/hinhvuong1.jpg",
+        "answer": "10 vuông"
+    },
+    {
+        "question": "Hình bên dưới có bao nhiêu hình tam giác?",
+        "choices": ["5 tam giác", "6 tam giác", "7 tam giác", "8 tam giác"],
+        "img" : "img/tamgiac3.jpg",
+        "answer": "6 tam giác"
+    },
+    {
+        "question": "Hình bên dưới có bao nhiêu hình tam giác?",
+        "choices": ["5 tam giác", "6 tam giác", "4 tam giác", "3 tam giác"],
+        "img" : "img/tamgiac4.jpg",
+        "answer": "4 tam giác"
+    },
+    {
+        "question": "Hình bên dưới có bao nhiêu hình tam giác?",
+        "choices": ["3 tam giác", "1 tam giác", "2 tam giác", "4 tam giác"],
+        "img" : "img/tamgiac5.jpg",
+        "answer": "3 tam giác"
+    },
+    {
+        "question": "Hình bên dưới có bao nhiêu hình tam giác và bao nhiêu hình chữ nhật?",
+        "choices": ["2 tam giác và 2 chữ nhật", "2 tam giác 3 chữ nhật", "3 tam giác 2 chữ nhật", "3 tam giác 3 chữ nhật"],
+        "img" : "img/chunhattamgiac.png",
+        "answer": "2 tam giác và 2 chữ nhật"
+    },
+    {
+        "question": "Hình bên dưới có bao nhiêu hình tam giác?",
+        "choices": ["4 tam giác", "5 tam giác", "6 tam giác", "3 tam giác"],
+        "img" : "img/tamgiac6.jpg",
+        "answer": "5 tam giác"
+    },
+    {
+        "question": "Hình bên dưới có bao nhiêu hình tam giác?",
+        "choices": ["7 tam giác", "8 tam giác", "9 tam giác", "10 tam giác"],
+        "img" : "img/tamgiac7.jpg",
+        "answer": "9 tam giác"
+    },
+    {
+        "question": "Hình bên dưới có bao nhiêu hình tam giác?",
+        "choices": ["7 tam giác", "8 tam giác", "9 tam giác", "10 tam giác"],
+        "img" : "img/tamgiac8.jpg",
+        "answer": "8 tam giác"
+    },
+    {
+        "question": "Hình bên dưới có bao nhiêu hình vuông?",
+        "choices": ["5 vuông", "8 vuông", "6 vuông", "7 vuông"],
+        "img" : "img/hinhvuong2.jpg",
+        "answer": "6 vuông"
+    },
+    {
+        "question": "Hình bên dưới có bao nhiêu tam giác?",
+        "choices": ["3 tam giác", "4 tam giác", "5 tam giác", "6 tam giác"],
+        "img" : "img/tamgiac10.png",
+        "answer": "3 tam giác"
+    },
+    {
+        "question": "Hình bên dưới có bao nhiêu tam giác?",
+        "choices": ["4 tam giác", "6 tam giác", "5 tam giác", "3 tam giác"],
+        "img" : "img/tamgiac9.jpg",
+        "answer": "5 tam giác"
+    },
+    {
+        "question": "Trong một ngày, cửa hàng bán được 56 kg đường, trong đó buổi sáng bán được 27kg.Hỏi buổi chiều bán được bao nhiêu kg đường?",
+        "choices": ["83 kg", "29kg", " 39 kg", "49kg"],
+        "img" : "",
+        "answer": "83 kg"
+    },
+    {
+        "question": "Thứ ba tuần này là ngày 20 tháng 12. Vậy thứ ba tuần sau là ngày mấy?",
+        "choices": ["Ngày 26 tháng 12", "Ngày 27 tháng 12", "Ngày 28 tháng 12", "Ngày 29 tháng 12"],
+        "img" : "",
+        "answer": "Ngày 27 tháng 12"
+    },
+    {
+        "question": "Lan và Hồng có 22 quyển truyện tranh. Nếu lấy bớt của Hồng 5 quyển thì hai bạn còn lại bao nhiêu quyển truyện tranh? Hai bạn còn lại số quyển truyện tranh là:",
+        "choices": ["27", "17", "22", "15"],
+        "img" : "",
+        "answer": "17"
+    },
+    {
+        "question": "Một cây tre dài 2m. Cứ mỗi tháng cây tre dài thêm 2m. Hỏi sau mấy tháng cây tre dài 10m",
+        "choices": ["3", "4", "5", "6"],
+        "img" : "",
+        "answer": "4"
+    },
+    {
+        "question": "Nhà Lan đến trường dài 2km đi học hết 30 phút. Giả sử Lan đi bộ đều .Hỏi sau khi đi được 1km thì hết bao nhiêu phút?",
+        "choices": ["15", "30", "45", "60"],
+        "img" : "",
+        "answer": "15"
+    },
+    {
+        "question": "Một đội xây cầu dài 100m xây hết 10 ngày. Hỏi 2 đội cùng xây cầu thì sẽ hết bao nhiêu ngày?",
+        "choices": ["15", "10", "5", "20"],
+        "img" : "",
+        "answer": "5"
+    },
+    {
+        "question": "Một bãi đổ xe có 20 chiếc xe, cứ sau 15 phút thì có 5 xe ra và 10 khác vào. Hỏi sau 30 phút bãi xe có bao nhiêu chiếc xe?",
+        "choices": ["15", "25", "30", "20"],
+        "img" : "",
+        "answer": "30"
+    },
+    {
+        "question": "Trong hộp có 2 quả bóng xanh và 1 quả bóng đỏ. Nam nhắm mắt và lấy ra 2 quả bóng ở trong hộp. Hỏi khả năng cả 2 quả bóng Nam lấy ra đều là bóng màu xanh là có thể, không thể hay chắc chắn xảy ra?",
+        "choices": ["Không thể", "Có thể", "Chắc chắn", "Không biết"],
+        "img" : "",
+        "answer": "Có thể"
+    },
+    {
+        "question": "Đồ vật sau đây có dạng khối nào?",
+        "choices": ["Khối lập phương", "Khối hộp chữ nhật", "Khối cầu", "Khối trụ"],
+        "img" : "img/khonggian.png",
+        "answer": "Khối lập phương"
+    },
+    {
+        "question": "Giờ vào học buổi sáng là 7 giờ 15 phút. Sáng nay, Phong vào học muộn 15 phút. Vậy sáng nay Phong vào học lúc",
+        "choices": ["7 giờ", "7 giờ 30 phút", "6 giờ 15 phút", "6 giờ 30 phút"],
+        "img" : "",
+        "answer": "7 giờ 30 phút"
+    },
+    {
+        "question": "Chị Lan đan mũ bằng len, mỗi cuộn len đan được 5 chiếc mũ. Hỏi với 4 cuộn len như vậy, chị Lan đan được bao nhiêu chiếc mũ?",
+        "choices": ["10", "9", "20", "19"],
+        "img" : "",
+        "answer": "20"
+    },
+    {
+        "question": "Ở trường Lê Lợi, lớp 2 có 40 học sinh, lớp 3 có ít hơn khối lớp 2 là 7 học sinh, lớp 4 có nhiều hơn lớp 2 5 học sinh. Hỏi cả 3 lớp có bao nhiêu học sinh?",
+        "choices": ["128", "133", "130", "132"],
+        "img" : "",
+        "answer": "128"
     }
 
 ]

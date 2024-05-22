@@ -9,6 +9,7 @@ let timerStarted = false;
 let pass = document.getElementById('name');
 
 
+
 setInterval(removeLocal, 30 * 60 * 1000);
 
 function removeLocal() {
@@ -24,7 +25,6 @@ function startQuiz() {
                 alert('Bạn đã hoàn thành bài thi này rồi !!!')
                 return
             }
-
             pass.classList.add('hidden')
             quizStarted = true;
             document.getElementById('start-button').classList.add('hidden'); // Ẩn nút "Bắt đầu"
@@ -46,20 +46,32 @@ function shuffleArray(array) {
         const j = Math.floor(Math.random() * (i + 1));
         [array[i], array[j]] = [array[j], array[i]];
     }
-    return array.slice(0, 10);;
+    return array.slice(0, 10);
 }
 
 document.addEventListener('DOMContentLoaded', (event) => {
-    fetch('questions.json')
-        .then(response => response.json())
-        .then(data => {
-            questions = shuffleArray(data); // Xáo trộn mảng câu hỏi
-            displayQuestion();
-            startTimer();
-        })
-        .catch(error => {
-            console.error('Error loading the questions:', error);
-        });
+    document.getElementById('start-button').addEventListener('click', () => {
+        let typeToan = document.getElementById('type-toan');
+        const selectedType = typeToan.options[typeToan.selectedIndex].value;
+        fetch('questions.json')
+            .then(response => response.json())
+            .then(data => {
+                if (selectedType == 'toanso') {
+                    questions = shuffleArray(data.filter(item => !item.img || item.img.trim() === '')); // Xáo trộn mảng câu hỏi
+                } else if (selectedType == 'toanhinh') {
+                    questions = shuffleArray(data.filter(item => item.img && item.img.trim() !== '')); // Xáo trộn mảng câu hỏi
+                } else {
+                    questions = shuffleArray(data);
+                }
+
+                displayQuestion();
+                startTimer();
+            })
+            .catch(error => {
+                console.error('Error loading the questions:', error);
+            });
+    });
+
 });
 
 function displayQuestion() {
@@ -69,14 +81,14 @@ function displayQuestion() {
     const questionContainer = document.getElementById('question-container');
     const imgContainer = document.getElementById('img-container');
     questionContainer.innerHTML = '';
-   
+
     imgContainer.innerHTML = '';
     const questionObj = questions[currentQuestionIndex];
     const questionImg = questionObj.img;
     console.log(questionImg)
-    if(questionImg == ""){
+    if (questionImg == "") {
         imgContainer.style.display = 'none';
-    }else{
+    } else {
         imgContainer.style.display = 'inline';
     }
     const img = document.createElement('img');
@@ -97,7 +109,7 @@ function displayQuestion() {
         choiceElement.classList.add('choice');
         choiceElement.addEventListener('click', () => selectAnswer(choiceElement, choice));
         questionContainer.appendChild(choiceElement);
-    
+
     });
 
     updateProgress();
@@ -208,9 +220,9 @@ function submitQuiz() {
         
         `,
         tg: `Thời gian làm bài lúc: ${now}`,
-        diem:  `Điểm của ${ten} là:  ${diem}` ,
+        diem: `Điểm của ${ten} là:  ${diem}`,
         score: `Số câu trả lời đúng là: ${score} `
-        
+
     };
     var service_id = 'service_pwl8wtg'
     var template_id = 'template_742s3dt'
