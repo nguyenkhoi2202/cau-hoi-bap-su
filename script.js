@@ -2,7 +2,7 @@ let currentQuestionIndex = 0;
 let score = 0;
 let questions = [];
 let timerInterval;
-let timeLeft = 700;
+let timeLeft = 900;
 
 let quizStarted = false; // Biến để kiểm tra xem bài thi đã bắt đầu hay chưa
 let timerStarted = false;
@@ -179,15 +179,15 @@ function submitQuiz() {
     console.log(timeQuiz)
     console.log(timeLeft)
     let diemTG = 50
-    if (timeQuiz > 400 && timeQuiz <= 450) {
+    if (timeQuiz > 600 && timeQuiz <= 650) {
         diemTG = 40
-    } else if (timeQuiz > 450 && timeQuiz <= 500) {
+    } else if (timeQuiz > 650 && timeQuiz <= 700) {
         diemTG = 30
-    } else if (timeQuiz > 500 && timeQuiz <= 550) {
+    } else if (timeQuiz > 700 && timeQuiz <= 750) {
         diemTG = 20
-    } else if (timeQuiz > 550 && timeQuiz <= 600) {
+    } else if (timeQuiz > 750 && timeQuiz <= 800) {
         diemTG = 10
-    } else if (timeQuiz > 600) {
+    } else if (timeQuiz > 800) {
         diemTG = 5
     }
     console.log(diemTG)
