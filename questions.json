@@ -1,51 +1,51 @@
 [
     {
-        "question": "Đội Một trồng được 50 cây, đội Hai trồng được ít hơn đội Một 15 cây. Hỏi cả hai đội trồng được bao nhiêu cây?",
-        "choices": ["85", "125", "95", "105"],
+        "question": "Đội Một trồng được 65 cây, đội Hai trồng được nhiều hơn đội Một 25 cây. Hỏi cả hai đội trồng được bao nhiêu cây?",
+        "choices": ["85", "95", "75", "105"],
         "img" : "",
-        "answer": "125"
+        "answer": "95"
     },
     {
-        "question": "Có 40 học sinh trong 1 lớp. Mỗi bàn có 4 bạn ngồi. Hỏi có bao nhiêu bàn học trong lớp?",
+        "question": "Có 36 học sinh trong 1 lớp. Mỗi bàn có 4 bạn ngồi. Hỏi có bao nhiêu bàn học trong lớp?",
         "choices": ["9", "10", "11", "12"],
         "img" : "",
-        "answer": "10"
+        "answer": "9"
     },
      {
-        "question": "Một con ốc sên bò lên 1 cái cây cao 10 mét. Mỗi ngày leo được 3 mét và đến tối ngủ quên bị tụt 2 mét. Hỏi đến ngày thứ ngấy thì ốc sên bò đến đỉnh cây?",
-        "choices": ["Ngày thứ 6", "Ngày thứ 7", "Ngày thứ 8", "Ngày thứ 10"],
+        "question": "Một con ốc sên bò lên 1 cái cây cao 10 mét. Mỗi ngày leo được 5 mét và đến tối ngủ quên bị tụt 3 mét. Hỏi đến ngày thứ ngấy thì ốc sên bò đến đỉnh cây?",
+        "choices": ["Ngày thứ 6", "Ngày thứ 5", "Ngày thứ 3", "Ngày thứ 4"],
         "img" : "",
-        "answer": "Ngày thứ 8"
+        "answer": "Ngày thứ 4"
     },
      {
-        "question": " Biết ô tô có 4 bánh, xe máy có 2 bánh, xe tải có 6 bánh. Một bãi xe có tất cả  15 chiếc xe các loại. Trong đó ô tô có 4 chiếc, xe  máy cho 6 chiếc. Hỏi bãi xe có tất cả bao nhiêu bánh xe và có bao nhiêu xe tải?",
-        "choices": ["5 xe tải và có 58 bánh xe", "5 xe tải và 58 bánh", "7 xe tải và 49 bánh xe", "7 xe tải và 49 bánh xe"],
+        "question": " Biết ô tô có 4 bánh, xe máy có 2 bánh. Một bãi xe có tất cả  15 chiếc xe các loại.  xe  máy cho 5 chiếc. Hỏi bãi xe có tất cả bao nhiêu bánh xe và có bao nhiêu xe ô tô?",
+        "choices": ["10 xe ô tô và có 50 bánh xe", "10 xe ô tô và 40 bánh", "5 xe ô tô và 50 bánh xe", "5 xe ô tô và 40 bánh xe"],
         "img" : "",
-        "answer": "5 xe tải và có 58 bánh xe"
+        "answer": "10 xe ô tô và có 50 bánh xe"
     },
      {
-        "question": "Người ta đem đựng 30 lít dầu vào các can nhỏ. Đựng vào mỗi can 5 lít. Tính số số can dầu ?",
-        "choices": ["25 can", "5 can", "6 can", "35 can"],
+        "question": "Người ta đem đựng 28 lít dầu vào các can nhỏ. Đựng vào mỗi can 4 lít. Tính số số can dầu ?",
+        "choices": ["24 can", "32 can", "6 can", "7 can"],
         "img" : "",
-        "answer": "6 can"
+        "answer": "7 can"
     },
      {
         "question": "Da cóc bọc bột lọc, bột lọc bọc hòn than, là quả gì?",
-        "choices": ["CHôm chôm", "Nhãn", "Thanh long", "Cam"],
+        "choices": ["Chôm chôm", "Nhãn", "Thanh long", "Cam"],
         "img" : "",
         "answer": "Nhãn"
     },
      {
-        "question": "Con gì hai mắt trong veo. Thích nằm sưởi nắng, thích trèo cây cau?",
+        "question": "Con gì hai mắt trong veo. Thích ngủ ngày, đêm lại thang thang?",
         "choices": ["Con thỏ", "Con mèo", "Con chó", "Con chuột"],
         "img" : "",
-        "answer": "Con mèo"
+        "answer": "Con chó"
     },
      {
-        "question": "Có chân mà chẳng biết đi. Có mặt phẳng lì cho bé ngồi lên. Là cái gì?",
+        "question": "Có chân mà chẳng biết đi. bé lấy treo đồ đi học. Là cái gì?",
         "choices": ["Cái bàn", "Cái ghế", "Cái tủ", "cái nhà"],
         "img" : "",
-        "answer": "Cái ghế"
+        "answer": "Cái tủ"
     },
      {
         "question": "Ba lan năm nay 30 tuổi, Lan nhỏ hơn ba lan 15 tuổi, hỏi 10 năm sau lan bao nhiêu tuổi?",
@@ -156,22 +156,22 @@
         "answer": "83 kg"
     },
     {
-        "question": "Thứ ba tuần này là ngày 20 tháng 12. Vậy thứ ba tuần sau là ngày mấy?",
+        "question": "Thứ tư tuần này là ngày 22 tháng 12. Vậy thứ ba tuần sau là ngày mấy?",
         "choices": ["Ngày 26 tháng 12", "Ngày 27 tháng 12", "Ngày 28 tháng 12", "Ngày 29 tháng 12"],
         "img" : "",
-        "answer": "Ngày 27 tháng 12"
+        "answer": "Ngày 28 tháng 12"
     },
     {
-        "question": "Lan và Hồng có 22 quyển truyện tranh. Nếu lấy bớt của Hồng 5 quyển thì hai bạn còn lại bao nhiêu quyển truyện tranh? Hai bạn còn lại số quyển truyện tranh là:",
-        "choices": ["27", "17", "22", "15"],
+        "question": "Lan và Hồng có 25 quyển truyện tranh. Nếu lấy bớt của Hồng 6 quyển thì hai bạn còn lại bao nhiêu quyển truyện tranh? Hai bạn còn lại số quyển truyện tranh là:",
+        "choices": ["27", "17", "22", "19"],
         "img" : "",
-        "answer": "17"
+        "answer": "19"
     },
     {
-        "question": "Một cây tre dài 2m. Cứ mỗi tháng cây tre dài thêm 2m. Hỏi sau mấy tháng cây tre dài 10m",
+        "question": "Một cây tre dài 1m. Cứ mỗi tháng cây tre dài thêm 2m. Hỏi sau mấy tháng cây tre dài 10m",
         "choices": ["3", "4", "5", "6"],
         "img" : "",
-        "answer": "4"
+        "answer": "5"
     },
     {
         "question": "Nhà Lan đến trường dài 2km đi học hết 30 phút. Giả sử Lan đi bộ đều .Hỏi sau khi đi được 1km thì hết bao nhiêu phút?",
@@ -210,10 +210,10 @@
         "answer": "7 giờ 30 phút"
     },
     {
-        "question": "Chị Lan đan mũ bằng len, mỗi cuộn len đan được 5 chiếc mũ. Hỏi với 4 cuộn len như vậy, chị Lan đan được bao nhiêu chiếc mũ?",
-        "choices": ["10", "9", "20", "19"],
+        "question": "Chị Lan đan mũ bằng len, mỗi cuộn len đan được 4 chiếc mũ. Hỏi với 4 cuộn len như vậy, chị Lan đan được bao nhiêu chiếc mũ?",
+        "choices": ["10", "9", "20", "16"],
         "img" : "",
-        "answer": "20"
+        "answer": "16"
     },
     {
         "question": "Ở trường Lê Lợi, lớp 2 có 40 học sinh, lớp 3 có ít hơn khối lớp 2 là 7 học sinh, lớp 4 có nhiều hơn lớp 2 5 học sinh. Hỏi cả 3 lớp có bao nhiêu học sinh?",
