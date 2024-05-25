@@ -180,15 +180,15 @@ function submitQuiz() {
     console.log(timeLeft)
     let diemTG = 50
     if (timeQuiz > 600 && timeQuiz <= 650) {
-        diemTG = 40
+        diemTG = 45
     } else if (timeQuiz > 650 && timeQuiz <= 700) {
-        diemTG = 30
+        diemTG = 40
     } else if (timeQuiz > 700 && timeQuiz <= 750) {
-        diemTG = 20
+        diemTG = 35
     } else if (timeQuiz > 750 && timeQuiz <= 800) {
-        diemTG = 10
+        diemTG = 30
     } else if (timeQuiz > 800) {
-        diemTG = 5
+        diemTG = 25
     }
     console.log(diemTG)
     let diem = score * 5 + diemTG;
