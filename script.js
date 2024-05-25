@@ -40,28 +40,59 @@ function startQuiz() {
     }
 }
 
-
-function shuffleArray(array) {
-    for (let i = array.length - 1; i > 0; i--) {
+function shuffleArrayOriginal(array) {
+     for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
         [array[i], array[j]] = [array[j], array[i]];
     }
     return array.slice(0, 10);
+}
+function shuffleArray(array) {
+    // for (let i = array.length - 1; i > 0; i--) {
+    //     const j = Math.floor(Math.random() * (i + 1));
+    //     [array[i], array[j]] = [array[j], array[i]];
+    // }
+    return array.slice(0, 10);
+}
+function shuffleArray1(array) {
+    // for (let i = array.length - 1; i > 0; i--) {
+    //     const j = Math.floor(Math.random() * (i + 1));
+    //     [array[i], array[j]] = [array[j], array[i]];
+    // }
+    return array.slice(11, 21);
+}
+function shuffleArray2(array) {
+    // for (let i = array.length - 1; i > 0; i--) {
+    //     const j = Math.floor(Math.random() * (i + 1));
+    //     [array[i], array[j]] = [array[j], array[i]];
+    // }
+    return array.slice(21, 32);
 }
 
 document.addEventListener('DOMContentLoaded', (event) => {
     document.getElementById('start-button').addEventListener('click', () => {
         let typeToan = document.getElementById('type-toan');
         const selectedType = typeToan.options[typeToan.selectedIndex].value;
+        let pass1 = document.getElementById('name');
         fetch('questions.json')
             .then(response => response.json())
             .then(data => {
                 if (selectedType == 'toanso') {
-                    questions = shuffleArray(data.filter(item => !item.img || item.img.trim() === '')); // Xáo trộn mảng câu hỏi
+                    questions = shuffleArray(data.filter(item => !item.img || item.img.trim() === ''));
+                   
                 } else if (selectedType == 'toanhinh') {
                     questions = shuffleArray(data.filter(item => item.img && item.img.trim() !== '')); // Xáo trộn mảng câu hỏi
                 } else {
-                    questions = shuffleArray(data);
+                     if(pass1 == 'minhquan') {
+                         questions = shuffleArray(data); // Xáo trộn mảng câu hỏi
+                    }else if(pass1 == 'minhquan11') {
+                         questions = shuffleArray1(data); // Xáo trộn mảng câu hỏi
+                    }else if(pass1 == 'minhquan99'){
+                         questions = shuffleArray2(data); // Xáo trộn mảng câu hỏi
+                    }else{
+                     questions = shuffleArrayOriginal(data); 
+                     }
+                   
                 }
 
                 displayQuestion();
