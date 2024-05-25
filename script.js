@@ -175,7 +175,7 @@ function updateProgress() {
 
 function submitQuiz() {
     localStorage.setItem(pass.value, pass.value);
-    let timeQuiz = 700 - timeLeft;
+    let timeQuiz = 900 - timeLeft;
     console.log(timeQuiz)
     console.log(timeLeft)
     let diemTG = 50
